@@ -76,3 +76,31 @@ var addWord = function() {
 		}
 	})
 }
+
+var capWord = function() {
+	var index = $('#wordIndex').val();
+	$.ajax({
+		type : "POST",
+		// the url where you want to sent the userName and password to
+		// contentType : "application/json",
+		url : 'http://localhost:5050/words/' + index,
+		//dataType : 'json',
+		async : false,
+		timeout : 100000,
+		// json object to sent to the authentication url
+		//data : JSON.stringify({
+			//"word" : word
+		//}),
+		success : function() {
+			console.log("SUCCESS: ");
+			//display(data);
+		},
+		error : function(e) {
+			console.log("ERROR: ", e);
+			display(e);
+		},
+		done : function(e) {
+			console.log("DONE");
+		}
+	})
+}
