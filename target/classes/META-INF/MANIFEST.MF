@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: TIERESTapi
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: awang
+Implementation-Vendor-Id: com.tie
+Build-Jdk: 1.8.0_91
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
